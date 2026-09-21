@@ -51,6 +51,7 @@ p {
     margin: 20px 0 30px;
     color: #999;
     font-size: 18px;
+    transition: opacity 0.2s ease;
 }
 
 button {
@@ -71,4 +72,22 @@ button:hover {
 
 button:active {
     transform: scale(0.97);
+}
+
+@media (max-width: 500px) {
+    .card {
+        padding: 35px 18px;
+    }
+
+    h1 {
+        letter-spacing: 3px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+    }
 }
