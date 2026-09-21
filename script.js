@@ -3,7 +3,7 @@ const clues = [
     "De eerste aanwijzing is dichterbij dan je denkt.",
     "Niet alles staat op de voorgrond.",
     "Er zijn meerdere aanwijzingen verborgen.",
-    "De volgende stap komt eraan..."
+    "Je bent nog maar net begonnen..."
 ];
 
 let clueIndex = 0;
@@ -24,3 +24,9 @@ function changeMessage() {
         }
     }, 200);
 }
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "x" || event.key === "X") {
+        document.body.classList.toggle("secret-mode");
+    }
+});
